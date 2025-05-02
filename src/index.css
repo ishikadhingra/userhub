@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark mode transitions */
+.dark {
+  color-scheme: dark;
+}
+
+* {
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+/* Dark mode styles for MUI components */
+.dark .MuiPaper-root {
+  background-color: #1f2937 !important;
+  color: #fff !important;
+}
+
+.dark .MuiTableCell-root {
+  color: #fff !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark .MuiTableHead-root .MuiTableCell-root {
+  background-color: #111827 !important;
+}
+
+.dark .MuiTableRow-root:hover {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f6f6f6;
+}
+@font-face{
+   
+    font-family: tages;
+    src: url(../src/fonts/Tagesschrift.ttf);
+  }
+  h2{
+    font-family: tages;
+    font-size: 44px;
+    text-align: center;
+  }
+
+.but:hover{
+color:white;
+
+}
+.but{
+  margin-bottom: 10px;
+  border-radius: 10px;
+}

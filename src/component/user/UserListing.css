@@ -1,0 +1,109 @@
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.user-table th,
+.user-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.user-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+}
+
+.user-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.user-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagination button {
+    transition: opacity 0.2s ease-in-out;
+}
+
+.pagination button:disabled {
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-weight: 500;
+    color: #333;
+}
+
+.user-listing-container {
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Custom styles for the table container */
+.MuiTableContainer-root {
+    margin-top: 16px;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+/* Header row styling */
+.MuiTableHead-root .MuiTableRow-root {
+    background-color: #f5f5f5;
+}
+
+.MuiTableHead-root .MuiTableCell-root {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Row hover effect */
+.MuiTableBody-root .MuiTableRow-root:hover {
+    background-color: #f8f9fa;
+}
+
+/* Pagination styling */
+.MuiTablePagination-root {
+    border-top: 1px solid #eee;
+}
+
+/* Action buttons container */
+.action-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .user-listing-container {
+        padding: 16px;
+    }
+} 

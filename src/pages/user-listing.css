@@ -1,0 +1,53 @@
+.user-listing-container {
+  padding: 24px;
+}
+
+.user-listing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.search-input {
+  min-width: 300px;
+}
+
+.upload-modal-content {
+  padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .user-listing-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+}
+
+/* Table customizations */
+.ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #f5f5f5;
+}
+
+/* Card shadow and border */
+.ant-card {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03),
+              0 1px 6px -1px rgba(0, 0, 0, 0.02),
+              0 2px 4px 0 rgba(0, 0, 0, 0.02);
+  border-radius: 8px;
+}
+
+/* Button group spacing */
+.ant-space {
+  flex-wrap: wrap;
+} 
